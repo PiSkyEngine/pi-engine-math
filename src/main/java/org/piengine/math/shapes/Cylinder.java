@@ -21,38 +21,62 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.shapes;
+package org.piengine.math.shapes;
 
 /**
- * The Interface Shape.
+ * The Class Cylinder.
  */
-public interface Shape {
+public class Cylinder implements Shape {
     
-    /**
-	 * Dimension.
-	 *
-	 * @return the int
-	 */
-    int dimension();
+    /** The height. */
+    private final double radius, height;
     
-    /**
-	 * Checks if is valid.
-	 *
-	 * @return true, if is valid
-	 */
-    boolean isValid();
+    /** The geometry. */
+    private final String geometry = "cylinder.pio";
+    
+    /** The material. */
+    private final String material = "default.pim";
 
     /**
-	 * Gets the geometry.
+	 * Instantiates a new cylinder.
 	 *
-	 * @return the geometry
+	 * @param radius the height.
+	 * @param height the height.
 	 */
-    String getGeometry();
+    public Cylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
 
     /**
-	 * Gets the material.
-	 *
-	 * @return the material
-	 */
-    String getMaterial();
+     * @see org.piengine.math.shapes.Shape#dimension()
+     */
+    @Override
+    public int dimension() {
+        return 3;
+    }
+
+    /**
+     * @see org.piengine.math.shapes.Shape#isValid()
+     */
+    @Override
+    public boolean isValid() {
+        return radius > 0 && height > 0;
+    }
+
+    /**
+     * @see org.piengine.math.shapes.Shape#getGeometry()
+     */
+    @Override
+    public String getGeometry() {
+        return geometry;
+    }
+
+    /**
+     * @see org.piengine.math.shapes.Shape#getMaterial()
+     */
+    @Override
+    public String getMaterial() {
+        return material;
+    }
 }

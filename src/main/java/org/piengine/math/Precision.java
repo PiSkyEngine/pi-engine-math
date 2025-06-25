@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math;
+package org.piengine.math;
 
 /**
  * The Interface Precision.
@@ -34,7 +34,7 @@ public interface Precision {
 	interface PrecisionTd extends Precision {
 		
 		/**
-		 * @see org.piengine.commons.math.Precision#precisionType()
+		 * @see org.piengine.math.Precision#precisionType()
 		 */
 		@Override
 		default PrecisionType precisionType() {
@@ -49,7 +49,7 @@ public interface Precision {
 	interface PrecisionTf extends Precision {
 		
 		/**
-		 * @see org.piengine.commons.math.Precision#precisionType()
+		 * @see org.piengine.math.Precision#precisionType()
 		 */
 		@Override
 		default PrecisionType precisionType() {
@@ -64,7 +64,7 @@ public interface Precision {
 	interface PrecisionTi extends Precision {
 		
 		/**
-		 * @see org.piengine.commons.math.Precision#precisionType()
+		 * @see org.piengine.math.Precision#precisionType()
 		 */
 		@Override
 		default PrecisionType precisionType() {
@@ -78,7 +78,7 @@ public interface Precision {
 	interface PrecisionTj extends Precision {
 		
 		/**
-		 * @see org.piengine.commons.math.Precision#precisionType()
+		 * @see org.piengine.math.Precision#precisionType()
 		 */
 		@Override
 		default PrecisionType precisionType() {

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.shapes;
+package org.piengine.math.shapes;
 
 /**
  * The Class Torus.
@@ -49,7 +49,7 @@ public class Torus implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#dimension()
+     * @see org.piengine.math.shapes.Shape#dimension()
      */
     @Override
     public int dimension() {
@@ -57,7 +57,7 @@ public class Torus implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#isValid()
+     * @see org.piengine.math.shapes.Shape#isValid()
      */
     @Override
     public boolean isValid() {
@@ -65,7 +65,7 @@ public class Torus implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#getGeometry()
+     * @see org.piengine.math.shapes.Shape#getGeometry()
      */
     @Override
     public String getGeometry() {
@@ -73,7 +73,7 @@ public class Torus implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#getMaterial()
+     * @see org.piengine.math.shapes.Shape#getMaterial()
      */
     @Override
     public String getMaterial() {

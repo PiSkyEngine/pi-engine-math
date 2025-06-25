@@ -21,14 +21,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math;
+package org.piengine.math;
 
 import java.lang.reflect.Array;
 import java.util.Objects;
 
-import org.piengine.commons.math.coordinates.XYZIndexValues;
-import org.piengine.commons.math.coordinates.XYZValues;
-import org.piengine.commons.math.coordinates.XYZWIndexValues;
+import org.piengine.math.coordinates.XYZIndexValues;
+import org.piengine.math.coordinates.XYZValues;
+import org.piengine.math.coordinates.XYZWIndexValues;
 
 /**
  * The Interface Matrix.
@@ -46,7 +46,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x2d extends Matrix1x2, PrecisionTd {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override double[] array() {
 				return new double[] {
@@ -80,7 +80,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x2f extends Matrix1x2, PrecisionTf {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override float[] array() {
 				return new float[] {
@@ -114,7 +114,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x2i extends Matrix1x2, PrecisionTi {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override int[] array() {
 				return new int[] {
@@ -148,7 +148,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x2j extends Matrix1x2, PrecisionTj {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override long[] array() {
 				return new long[] {
@@ -186,7 +186,7 @@ public interface Matrix extends Precision {
 		int SIZE = 2;
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#cols()
+		 * @see org.piengine.math.Matrix#cols()
 		 */
 		@Override
 		default int cols() {
@@ -194,7 +194,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#rows()
+		 * @see org.piengine.math.Matrix#rows()
 		 */
 		@Override
 		default int rows() {
@@ -202,7 +202,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#size()
+		 * @see org.piengine.math.Matrix#size()
 		 */
 		@Override
 		default int size() {
@@ -307,7 +307,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x3d extends Matrix1x3, PrecisionTd {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override double[] array() {
 				return new double[] {
@@ -345,7 +345,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xd(int)
 			 */
 			@Override
 			default double xd(int row) {
@@ -355,7 +355,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xf(int)
 			 */
 			@Override
 			default float xf(int row) {
@@ -363,7 +363,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yd(int)
 			 */
 			@Override
 			default double yd(int row) {
@@ -373,7 +373,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yf(int)
 			 */
 			@Override
 			default float yf(int row) {
@@ -381,7 +381,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zd(int)
 			 */
 			@Override
 			default double zd(int row) {
@@ -391,7 +391,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zf(int)
 			 */
 			@Override
 			default float zf(int row) {
@@ -405,7 +405,7 @@ public interface Matrix extends Precision {
 		interface Matrix1x3f extends Matrix1x3, PrecisionTf {
 			
 			/**
-			 * @see org.piengine.commons.math.Matrix#array()
+			 * @see org.piengine.math.Matrix#array()
 			 */
 			default @Override float[] array() {
 				return new float[] {
@@ -443,7 +443,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xd(int)
 			 */
 			@Override
 			default double xd(int row) {
@@ -451,7 +451,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xf(int)
 			 */
 			@Override
 			default float xf(int row) {
@@ -460,7 +460,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yd(int)
 			 */
 			@Override
 			default double yd(int row) {
@@ -468,7 +468,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yf(int)
 			 */
 			@Override
 			default float yf(int row) {
@@ -477,7 +477,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zd(int)
 			 */
 			@Override
 			default double zd(int row) {
@@ -485,7 +485,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zf(int)
 			 */
 			@Override
 			default float zf(int row) {
@@ -504,7 +504,7 @@ public interface Matrix extends Precision {
 		int SIZE = 3;
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#cols()
+		 * @see org.piengine.math.Matrix#cols()
 		 */
 		@Override
 		default int cols() {
@@ -512,7 +512,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#rows()
+		 * @see org.piengine.math.Matrix#rows()
 		 */
 		@Override
 		default int rows() {
@@ -520,7 +520,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#size()
+		 * @see org.piengine.math.Matrix#size()
 		 */
 		@Override
 		default int size() {
@@ -582,7 +582,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xf(int)
 			 */
 			@Override
 			public float xf(int row) {
@@ -590,7 +590,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yf(int)
 			 */
 			@Override
 			public float yf(int row) {
@@ -598,7 +598,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zf(int)
 			 */
 			@Override
 			public float zf(int row) {
@@ -655,7 +655,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xf(int)
 			 */
 			@Override
 			public float xf(int row) {
@@ -663,7 +663,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yf(int)
 			 */
 			@Override
 			public float yf(int row) {
@@ -671,7 +671,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zf(int)
 			 */
 			@Override
 			public float zf(int row) {
@@ -679,7 +679,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#xd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#xd(int)
 			 */
 			@Override
 			public double xd(int row) {
@@ -687,7 +687,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#yd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#yd(int)
 			 */
 			@Override
 			public double yd(int row) {
@@ -695,7 +695,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZIndexValues#zd(int)
+			 * @see org.piengine.math.coordinates.XYZIndexValues#zd(int)
 			 */
 			@Override
 			public double zd(int row) {
@@ -714,7 +714,7 @@ public interface Matrix extends Precision {
 		int SIZE = 9;
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#cols()
+		 * @see org.piengine.math.Matrix#cols()
 		 */
 		@Override
 		default int cols() {
@@ -722,7 +722,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#rows()
+		 * @see org.piengine.math.Matrix#rows()
 		 */
 		@Override
 		default int rows() {
@@ -730,7 +730,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#size()
+		 * @see org.piengine.math.Matrix#size()
 		 */
 		@Override
 		default int size() {
@@ -876,7 +876,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#xf(int)
 			 */
 			@Override
 			public float xf(int row) {
@@ -884,7 +884,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#yf(int)
 			 */
 			@Override
 			public float yf(int row) {
@@ -892,7 +892,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#zf(int)
 			 */
 			@Override
 			public float zf(int row) {
@@ -900,7 +900,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#wf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#wf(int)
 			 */
 			@Override
 			public float wf(int row) {
@@ -1040,7 +1040,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#xf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#xf(int)
 			 */
 			@Override
 			public float xf(int row) {
@@ -1048,7 +1048,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#yf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#yf(int)
 			 */
 			@Override
 			public float yf(int row) {
@@ -1056,7 +1056,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#zf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#zf(int)
 			 */
 			@Override
 			public float zf(int row) {
@@ -1064,7 +1064,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#xd(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#xd(int)
 			 */
 			@Override
 			public double xd(int row) {
@@ -1072,7 +1072,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#yd(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#yd(int)
 			 */
 			@Override
 			public double yd(int row) {
@@ -1080,7 +1080,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#zd(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#zd(int)
 			 */
 			@Override
 			public double zd(int row) {
@@ -1088,7 +1088,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#wd(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#wd(int)
 			 */
 			@Override
 			public double wd(int row) {
@@ -1096,7 +1096,7 @@ public interface Matrix extends Precision {
 			}
 
 			/**
-			 * @see org.piengine.commons.math.coordinates.XYZWIndexValues#wf(int)
+			 * @see org.piengine.math.coordinates.XYZWIndexValues#wf(int)
 			 */
 			@Override
 			public float wf(int row) {
@@ -1115,7 +1115,7 @@ public interface Matrix extends Precision {
 		int SIZE = 16;
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#cols()
+		 * @see org.piengine.math.Matrix#cols()
 		 */
 		@Override
 		default int cols() {
@@ -1123,7 +1123,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#rows()
+		 * @see org.piengine.math.Matrix#rows()
 		 */
 		@Override
 		default int rows() {
@@ -1131,7 +1131,7 @@ public interface Matrix extends Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Matrix#size()
+		 * @see org.piengine.math.Matrix#size()
 		 */
 		@Override
 		default int size() {

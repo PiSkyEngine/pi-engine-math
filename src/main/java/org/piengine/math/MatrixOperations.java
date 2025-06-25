@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math;
+package org.piengine.math;
 
-import org.piengine.commons.math.Matrix.Matrix4;
-import org.piengine.commons.math.Matrix.Matrix4.Matrix4d;
-import org.piengine.commons.math.Matrix.Matrix4.Matrix4f;
+import org.piengine.math.Matrix.Matrix4;
+import org.piengine.math.Matrix.Matrix4.Matrix4d;
+import org.piengine.math.Matrix.Matrix4.Matrix4f;
 
 /**
  * The Class MatrixOperations.

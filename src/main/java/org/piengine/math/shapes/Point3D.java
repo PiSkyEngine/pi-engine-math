@@ -21,10 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.shapes;
+package org.piengine.math.shapes;
 
-import org.piengine.commons.math.Precision;
-import org.piengine.commons.math.coordinates.XYZValues;
+import org.piengine.math.Precision;
+import org.piengine.math.coordinates.XYZValues;
 
 /**
  * The Interface Point3D.
@@ -41,7 +41,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 	record Point3f(float x, float y, float z) implements Point3D, PrecisionTf {
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#dimension()
+		 * @see org.piengine.math.shapes.Shape#dimension()
 		 */
 		@Override
 		public int dimension() {
@@ -49,7 +49,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#isValid()
+		 * @see org.piengine.math.shapes.Shape#isValid()
 		 */
 		@Override
 		public boolean isValid() {
@@ -58,7 +58,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#getGeometry()
+		 * @see org.piengine.math.shapes.Shape#getGeometry()
 		 */
 		@Override
 		public String getGeometry() {
@@ -66,7 +66,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#getMaterial()
+		 * @see org.piengine.math.shapes.Shape#getMaterial()
 		 */
 		@Override
 		public String getMaterial() {
@@ -74,7 +74,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xf()
+		 * @see org.piengine.math.coordinates.XYZValues#xf()
 		 */
 		@Override
 		public float xf() {
@@ -82,7 +82,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yf()
+		 * @see org.piengine.math.coordinates.XYZValues#yf()
 		 */
 		@Override
 		public float yf() {
@@ -90,7 +90,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zf()
+		 * @see org.piengine.math.coordinates.XYZValues#zf()
 		 */
 		@Override
 		public float zf() {
@@ -109,7 +109,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 	record Point3d(double x, double y, double z) implements Point3D, PrecisionTd {
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#dimension()
+		 * @see org.piengine.math.shapes.Shape#dimension()
 		 */
 		@Override
 		public int dimension() {
@@ -117,7 +117,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#isValid()
+		 * @see org.piengine.math.shapes.Shape#isValid()
 		 */
 		@Override
 		public boolean isValid() {
@@ -126,7 +126,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xd()
+		 * @see org.piengine.math.coordinates.XYZValues#xd()
 		 */
 		@Override
 		public double xd() {
@@ -134,7 +134,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yd()
+		 * @see org.piengine.math.coordinates.XYZValues#yd()
 		 */
 		@Override
 		public double yd() {
@@ -142,7 +142,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zd()
+		 * @see org.piengine.math.coordinates.XYZValues#zd()
 		 */
 		@Override
 		public double zd() {
@@ -150,7 +150,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#getGeometry()
+		 * @see org.piengine.math.shapes.Shape#getGeometry()
 		 */
 		@Override
 		public String getGeometry() {
@@ -158,7 +158,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.shapes.Shape#getMaterial()
+		 * @see org.piengine.math.shapes.Shape#getMaterial()
 		 */
 		@Override
 		public String getMaterial() {
@@ -166,7 +166,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xf()
+		 * @see org.piengine.math.coordinates.XYZValues#xf()
 		 */
 		@Override
 		public float xf() {
@@ -174,7 +174,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yf()
+		 * @see org.piengine.math.coordinates.XYZValues#yf()
 		 */
 		@Override
 		public float yf() {
@@ -182,7 +182,7 @@ public interface Point3D extends Shape, XYZValues, Precision {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zf()
+		 * @see org.piengine.math.coordinates.XYZValues#zf()
 		 */
 		@Override
 		public float zf() {

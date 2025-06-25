@@ -21,9 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.coordinates;
+package org.piengine.math.coordinates;
 
-import org.piengine.commons.math.Precision;
+import org.piengine.math.Precision;
 
 /**
  * The Interface XYValues.

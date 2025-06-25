@@ -21,14 +21,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.coordinates;
+package org.piengine.math.coordinates;
 
-import org.piengine.commons.math.Precision;
+import org.piengine.math.Precision;
 
 /**
- * The Interface XYZIndexValues.
+ * The Interface XYZWIndexValues.
  */
-public interface XYZIndexValues extends Precision {
+public interface XYZWIndexValues extends Precision {
 	
 	/** The x col offset. */
 	int X_COL_OFFSET = 0;
@@ -39,6 +39,9 @@ public interface XYZIndexValues extends Precision {
 	/** The z col offset. */
 	int Z_COL_OFFSET = 2;
 	
+	/** The w col offset. */
+	int W_COL_OFFSET = 3;
+
 	/**
 	 * Cols.
 	 *
@@ -52,6 +55,54 @@ public interface XYZIndexValues extends Precision {
 	 * @return the int
 	 */
 	int rows();
+
+	/**
+	 * Wd.
+	 *
+	 * @param row the row
+	 * @return the double
+	 */
+	default double wd(int row) {
+		return wf(row);
+	}
+
+	/**
+	 * Wf.
+	 *
+	 * @param row the row
+	 * @return the float
+	 */
+	float wf(int row);
+
+	/**
+	 * Wi.
+	 *
+	 * @param row the row
+	 * @return the int
+	 */
+	default int wi(int row) {
+		return precisionCastToInt(wf(row));
+	}
+
+	/**
+	 * Wj.
+	 *
+	 * @param row the row
+	 * @return the long
+	 */
+	default long wj(int row) {
+		return precisionCastToLong(wf(row));
+	}
+
+	/**
+	 * Wn.
+	 *
+	 * @param row the row
+	 * @return the number
+	 */
+	default Number wn(int row) {
+		return wf(row);
+	}
 
 	/**
 	 * Xd.
@@ -196,5 +247,4 @@ public interface XYZIndexValues extends Precision {
 	default Number zn(int row) {
 		return zf(row);
 	}
-
 }

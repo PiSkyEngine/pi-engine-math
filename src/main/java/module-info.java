@@ -36,15 +36,15 @@
  *
  * <h2>Exported Packages</h2>
  * <ul>
- *   <li>{@code org.piengine.commons.math}: Core math classes, including matrices
+ *   <li>{@code org.piengine.math}: Core math classes, including matrices
  *       ({@code Matrix1x3}, {@code Matrix4x4}), precision handling ({@code Precision}),
  *       and utility functions ({@code MathUtils}) for trigonometry, quaternions,
  *       and interpolation.</li>
- *   <li>{@code org.piengine.commons.math.coordinates}: Coordinate classes and
+ *   <li>{@code org.piengine.math.coordinates}: Coordinate classes and
  *       interfaces, including {@code Cartesian3D} (with implementations
  *       {@code Cartesian3f}, {@code Cartesian3d}) and {@code Vector3f} for vector
  *       operations (e.g., cross product, normalization).</li>
- *   <li>{@code org.piengine.commons.math.shapes}: Shape classes, such as
+ *   <li>{@code org.piengine.math.shapes}: Shape classes, such as
  *       {@code Point3D} (with implementations {@code Point3f}, {@code Point3d}),
  *       and planned shapes like {@code Box}, {@code Circle}, and {@code Sphere}
  *       for collision detection and procedural generation.</li>
@@ -66,7 +66,7 @@
  *
  * <h3>Example: Positioning a Scene Node</h3>
  * <pre>
- * import org.piengine.commons.math.coordinates.Cartesian3f;
+ * import org.piengine.math.coordinates.Cartesian3f;
  * import org.pi.game.engine.core.scene.Scene;
  * import org.pi.game.engine.core.scene.SceneNode;
  *
@@ -83,7 +83,7 @@
  * @since 0.0.1
  */
 module org.piengine.math {
-	exports org.piengine.commons.math;
-	exports org.piengine.commons.math.coordinates;
-	exports org.piengine.commons.math.shapes;
+	exports org.piengine.math;
+	exports org.piengine.math.coordinates;
+	exports org.piengine.math.shapes;
 }

@@ -40,8 +40,8 @@ The `pi-engine-math` module is available on Maven Central. Add it to your projec
 Create and manipulate a 3D point using `Cartesian3f`:
 
 ```java
-import org.piengine.commons.math.coordinates.Cartesian3D;
-import org.piengine.commons.math.coordinates.Cartesian3f;
+import org.piengine.math.coordinates.Cartesian3D;
+import org.piengine.math.coordinates.Cartesian3f;
 
 // Create a 3D point at (1, 2, 3)
 Cartesian3f point1 = new Cartesian3f(1.0f, 2.0f, 3.0f);
@@ -56,7 +56,7 @@ System.out.println("Distance: " + distance); // Output: Distance: 5.196152422706
 Perform vector operations using `Vector3f`:
 
 ```java
-import org.piengine.commons.math.coordinates.Vector3f;
+import org.piengine.math.coordinates.Vector3f;
 
 // Create two vectors
 Vector3f vector1 = new Vector3f(1.0f, 0.0f, 0.0f);
@@ -140,7 +140,7 @@ THE SOFTWARE.
 
 #### **Alignment with PI Engine**
 - **Module Name**: Reflects the updated `pi-engine-math` name.
-- **Packages**: Uses `org.piengine.commons.math.coordinates` and `org.piengine.commons.math.shapes`, as per the specification.
+- **Packages**: Uses `org.piengine.math.coordinates` and `org.piengine.math.shapes`, as per the specification.
 - **Version**: Matches the project version (`0.0.1-SNAPSHOT`).
 - **Java 23**: Noted in requirements, with `--enable-preview` for features like StructuredTaskScope.
 - **Independence**: Highlighted for use in other projects, supporting your jMonkeyEngine game.

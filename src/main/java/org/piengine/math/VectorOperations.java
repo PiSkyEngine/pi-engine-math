@@ -21,71 +21,60 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.coordinates;
-
-import org.piengine.commons.math.Matrix.Matrix1x3;
+package org.piengine.math;
 
 /**
- * The Interface Cartesian3D.
+ * The Class VectorOperations.
  */
-public interface Cartesian3D extends Coordinate, Matrix1x3 {
+public final class VectorOperations {
 
-	/**
-	 * The Interface Cartesian3d.
+    /**
+	 * Instantiates a new vector operations.
 	 */
-	interface Cartesian3d extends Cartesian3D, Matrix1x3d {}
+    private VectorOperations() {}
 
-	/**
-	 * The Interface Cartesian3f.
-	 */
-	interface Cartesian3f extends Cartesian3D, Matrix1x3f {}
-
-	/**
-	 * Adds the.
+    /**
+	 * Angle.
 	 *
-	 * @param point the point
-	 * @return the cartesian 3 D
-	 */
-	Cartesian3D add(Cartesian3D point);
-
-	/**
-	 * @see org.piengine.commons.math.coordinates.Coordinate#dimension()
-	 */
-	@Override
-	default int dimension() {
-		return 3;
-	}
-
-	/**
-	 * Distance to.
-	 *
-	 * @param point the point
+	 * @param a the a
+	 * @param b the b
 	 * @return the double
 	 */
-	default double distanceTo(Cartesian3D point) {
-		double dx = xd() - point.xd();
-		double dy = yd() - point.yd();
-		double dz = zd() - point.zd();
-		return Math.sqrt(dx * dx + dy * dy + dz * dz);
-	}
+    public static double angle(Vector3D a, Vector3D b) {
+        double dot = a.dot(b);
+        double mag = a.magnitude() * b.magnitude();
+        if (mag == 0) {
+            throw new ArithmeticException("Cannot compute angle with zero vector");
+        }
+        return Math.acos(dot / mag);
+    }
 
-	/**
-	 * Equals.
+    /**
+	 * Project.
 	 *
-	 * @param x the x
-	 * @param y the y
-	 * @param z the z
-	 * @return true, if successful
+	 * @param a the a
+	 * @param b the b
+	 * @return the vector 3 D
 	 */
-	default boolean equals(int x, int y, int z) {
-		return xi() == x && yi() == y && zi() == z;
-	}
+    public static Vector3D project(Vector3D a, Vector3D b) {
+        double magB = b.magnitude();
+        if (magB == 0) {
+            throw new ArithmeticException("Cannot project onto zero vector");
+        }
+        double scale = a.dot(b) / (magB * magB);
+        return b.scale(scale);
+    }
 
-	/**
-	 * Subtract.
+    /**
+	 * Reflect.
 	 *
-	 * @param point the point
-	 * @return the cartesian 3 D
+	 * @param a the a
+	 * @param n the n
+	 * @return the vector 3 D
 	 */
-	Cartesian3D subtract(Cartesian3D point);
+    public static Vector3D reflect(Vector3D a, Vector3D n) {
+        Vector3D nNorm = n.normalize();
+        double dot = a.dot(nNorm);
+        return a.subtract(nNorm.scale(2 * dot));
+    }
 }

@@ -21,33 +21,38 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math.shapes;
+package org.piengine.math.shapes;
+
 
 /**
- * The Class Sphere.
+ * The Class Box.
  */
-public class Sphere implements Shape {
+public class Box implements Shape {
     
-    /** The radius. */
-    private final double radius;
+    /** The depth. */
+    private final double width, height, depth;
     
     /** The geometry. */
-    private final String geometry = "sphere.pio";
+    private final String geometry = "box.pio";
     
     /** The material. */
     private final String material = "default.pim";
 
     /**
-	 * Instantiates a new sphere.
+	 * Instantiates a new box.
 	 *
-	 * @param radius the radius.
+	 * @param width  the depth.
+	 * @param height the depth.
+	 * @param depth  the depth.
 	 */
-    public Sphere(double radius) {
-        this.radius = radius;
+    public Box(double width, double height, double depth) {
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#dimension()
+     * @see org.piengine.math.shapes.Shape#dimension()
      */
     @Override
     public int dimension() {
@@ -55,15 +60,15 @@ public class Sphere implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#isValid()
+     * @see org.piengine.math.shapes.Shape#isValid()
      */
     @Override
     public boolean isValid() {
-        return radius > 0;
+        return width > 0 && height > 0 && depth > 0;
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#getGeometry()
+     * @see org.piengine.math.shapes.Shape#getGeometry()
      */
     @Override
     public String getGeometry() {
@@ -71,7 +76,7 @@ public class Sphere implements Shape {
     }
 
     /**
-     * @see org.piengine.commons.math.shapes.Shape#getMaterial()
+     * @see org.piengine.math.shapes.Shape#getMaterial()
      */
     @Override
     public String getMaterial() {

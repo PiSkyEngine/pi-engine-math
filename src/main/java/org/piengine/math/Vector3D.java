@@ -21,11 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.piengine.commons.math;
+package org.piengine.math;
 
-import org.piengine.commons.math.Matrix.Matrix1x3;
-import org.piengine.commons.math.coordinates.Coordinate;
-import org.piengine.commons.math.shapes.Point3D;
+import org.piengine.math.Matrix.Matrix1x3;
+import org.piengine.math.coordinates.Coordinate;
+import org.piengine.math.shapes.Point3D;
 
 /**
  * The Interface Vector3D.
@@ -65,7 +65,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xf()
+		 * @see org.piengine.math.coordinates.XYZValues#xf()
 		 */
 		@Override
 		public float xf() {
@@ -73,7 +73,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yf()
+		 * @see org.piengine.math.coordinates.XYZValues#yf()
 		 */
 		@Override
 		public float yf() {
@@ -81,7 +81,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zf()
+		 * @see org.piengine.math.coordinates.XYZValues#zf()
 		 */
 		@Override
 		public float zf() {
@@ -89,7 +89,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#normalize()
+		 * @see org.piengine.math.Vector3D#normalize()
 		 */
 		@Override
 		public Vector3D normalize() {
@@ -101,7 +101,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#add(org.piengine.commons.math.Vector3D)
+		 * @see org.piengine.math.Vector3D#add(org.piengine.math.Vector3D)
 		 */
 		@Override
 		public Vector3D add(Vector3D vector) {
@@ -109,7 +109,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#subtract(org.piengine.commons.math.Vector3D)
+		 * @see org.piengine.math.Vector3D#subtract(org.piengine.math.Vector3D)
 		 */
 		@Override
 		public Vector3D subtract(Vector3D vector) {
@@ -117,7 +117,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#scale(double)
+		 * @see org.piengine.math.Vector3D#scale(double)
 		 */
 		@Override
 		public Vector3D scale(double factor) {
@@ -125,7 +125,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#toPoint()
+		 * @see org.piengine.math.Vector3D#toPoint()
 		 */
 		@Override
 		public Point3D toPoint() {
@@ -167,7 +167,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#normalize()
+		 * @see org.piengine.math.Vector3D#normalize()
 		 */
 		@Override
 		public Vector3D normalize() {
@@ -179,7 +179,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#add(org.piengine.commons.math.Vector3D)
+		 * @see org.piengine.math.Vector3D#add(org.piengine.math.Vector3D)
 		 */
 		@Override
 		public Vector3D add(Vector3D vector) {
@@ -187,7 +187,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#subtract(org.piengine.commons.math.Vector3D)
+		 * @see org.piengine.math.Vector3D#subtract(org.piengine.math.Vector3D)
 		 */
 		@Override
 		public Vector3D subtract(Vector3D vector) {
@@ -195,7 +195,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#scale(double)
+		 * @see org.piengine.math.Vector3D#scale(double)
 		 */
 		@Override
 		public Vector3D scale(double factor) {
@@ -203,7 +203,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.Vector3D#toPoint()
+		 * @see org.piengine.math.Vector3D#toPoint()
 		 */
 		@Override
 		public Point3D toPoint() {
@@ -211,7 +211,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xf()
+		 * @see org.piengine.math.coordinates.XYZValues#xf()
 		 */
 		@Override
 		public float xf() {
@@ -219,7 +219,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yf()
+		 * @see org.piengine.math.coordinates.XYZValues#yf()
 		 */
 		@Override
 		public float yf() {
@@ -227,7 +227,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zf()
+		 * @see org.piengine.math.coordinates.XYZValues#zf()
 		 */
 		@Override
 		public float zf() {
@@ -235,7 +235,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#xd()
+		 * @see org.piengine.math.coordinates.XYZValues#xd()
 		 */
 		@Override
 		public double xd() {
@@ -243,7 +243,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#yd()
+		 * @see org.piengine.math.coordinates.XYZValues#yd()
 		 */
 		@Override
 		public double yd() {
@@ -251,7 +251,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 		}
 
 		/**
-		 * @see org.piengine.commons.math.coordinates.XYZValues#zd()
+		 * @see org.piengine.math.coordinates.XYZValues#zd()
 		 */
 		@Override
 		public double zd() {
@@ -322,7 +322,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 	}
 
 	/**
-	 * @see org.piengine.commons.math.coordinates.Coordinate#dimension()
+	 * @see org.piengine.math.coordinates.Coordinate#dimension()
 	 */
 	@Override
 	default int dimension() {
@@ -340,7 +340,7 @@ public interface Vector3D extends Coordinate, Matrix1x3 {
 	}
 
 	/**
-	 * @see org.piengine.commons.math.coordinates.Coordinate#isValid()
+	 * @see org.piengine.math.coordinates.Coordinate#isValid()
 	 */
 	@Override
 	default boolean isValid() {
